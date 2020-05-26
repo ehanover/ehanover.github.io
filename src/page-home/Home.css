@@ -1,0 +1,25 @@
+/* 
+.column{
+  float: left;
+  width:50%;
+}
+
+.row {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.linkRow {
+  background-color: aqua;
+} */
+
+.myHover {
+  transition: transform .2s;
+}
+.myHover:hover {
+  -ms-transform: scale(1.4);
+  -webkit-transform: scale(1.4);
+  transform: scale(1.4); 
+}
+

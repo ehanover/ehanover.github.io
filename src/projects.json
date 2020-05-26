@@ -1,0 +1,74 @@
+{
+    "projects": [
+        {
+            "title": "Restaurant Search Website",
+            "github": "capitalone-ses",
+            "technologies": ["Vue.js"],
+            "date": "03/2020",
+            "id": "01"
+        },
+        {
+            "title": "LTE Arduino Camera Robot",
+            "github": "camera-robot",
+            "technologies": ["Android (Flutter)", "Arduino"],
+            "date": "05/2020",
+            "id": "02"
+        },
+        {
+            "title": "Phone Guitar Hero Clone",
+            "github": "clone-hero-mobile",
+            "technologies": ["Android (Flutter)"],
+            "date": "07/2019",
+            "id": "03"
+        },
+        {
+            "title": "Android Weather Widget (DarkSky API)",
+            "github": "weatherwidget-darksky",
+            "technologies": ["Android (Java)"],
+            "date": "07/2019",
+            "id": "04"
+        },
+        {
+            "title": "Android Weather Widget (___ API)",
+            "github": "TODO",
+            "technologies": ["Android (Java)"],
+            "date": "07/2019",
+            "id": "05"
+        },
+        {
+            "title": "Minimax Algorithm with Tic-Tac-Toe, Connect Four, and Othello",
+            "github": "minimax-games",
+            "technologies": ["Python"],
+            "date": "03/2019",
+            "id": "06"
+        },
+        {
+            "title": "Minesweeper Clone and Solver",
+            "github": "minesweeper-solver",
+            "technologies": ["Python"],
+            "date": "06/2019",
+            "id": "07"
+        },
+        {
+            "title": "Raspberry Pi Lighting System with App",
+            "github": "lights-rpi-digital",
+            "technologies": ["Python", "Raspberry Pi", "Android (Java)"],
+            "date": "06/2019",
+            "id": "08"
+        },
+        {
+            "title": "Simple Android Game",
+            "github": "donut-dash",
+            "technologies": ["Android (Java)"],
+            "date": "06/2017",
+            "id": "09"
+        },
+        {
+            "title": "Personal Website",
+            "github": "ehanover.github.io",
+            "technologies": ["React.js"],
+            "date": "05/2020",
+            "id": "10"
+        }
+    ]
+}
