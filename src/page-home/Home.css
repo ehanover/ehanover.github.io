@@ -14,6 +14,10 @@
   background-color: aqua;
 } */
 
+#infoAnchor {
+  font-size: 32pt;
+}
+
 .myHover {
   transition: transform .2s;
 }

@@ -1,0 +1,16 @@
+
+.Project {
+  text-align: left;
+  width: 75%;
+  margin: 0 auto;
+}
+
+#projectsAnchor {
+  margin-bottom: 18px;
+}
+/* .myProjectItem {
+  margin: 10px;
+} */
+.myProjectItem p {
+  margin-top: -6px;
+}
