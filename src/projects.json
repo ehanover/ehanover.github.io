@@ -1,7 +1,7 @@
 {
     "projects": [
         {
-            "title": "Restaurant Search Website",
+            "title": "Yelp Restaurant Search Website",
             "github": "capitalone-ses",
             "technologies": ["Vue.js"],
             "date": "03/2020",
@@ -30,7 +30,7 @@
         },
         {
             "title": "Android Weather Widget (___ API)",
-            "github": "TODO",
+            "github": "weatherwidget-TODO",
             "technologies": ["Android (Java)"],
             "date": "07/2019",
             "id": "05"

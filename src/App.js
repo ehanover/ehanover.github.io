@@ -1,5 +1,5 @@
 import React from 'react';
-import { Router } from "@reach/router"; // https://reach.tech/router
+import { Router } from '@reach/router'; // https://reach.tech/router
 // import { Switch, HashRouter, Route, Link as HashLink } from 'react-router-dom'
 import Home from './page-home/Home.js';
 import Project from './page-project/Project.js';
@@ -24,13 +24,13 @@ function App() {
       </div> */}
       <div className="myContent">
         <Router>
-          <Home path="/"/>
-          <Project path="/project/:projectId"/>
+          <Home path="/" />
+          <Project path="/project/:github" />
         </Router>
       </div>
     </div>
 
-    // TODO footer?
+  // TODO footer?
   );
 }
 

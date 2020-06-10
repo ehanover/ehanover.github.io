@@ -12,7 +12,14 @@
 
 .linkRow {
   background-color: aqua;
-} */
+}
+*/
+
+#myPortrait {
+  border: 2px solid #021a40;
+  height: 400px;
+  width: auto;
+}
 
 #infoAnchor {
   font-size: 32pt;
@@ -27,3 +34,9 @@
   transform: scale(1.4); 
 }
 
+
+@media only screen and (max-device-width: 700px) {
+  #myPortrait {
+    height: 200px;
+  }
+}

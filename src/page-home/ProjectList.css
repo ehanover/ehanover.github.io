@@ -1,16 +1,24 @@
-
 .Project {
   text-align: left;
-  width: 75%;
+  width: 70%;
   margin: 0 auto;
 }
 
 #projectsAnchor {
   margin-bottom: 18px;
 }
-/* .myProjectItem {
-  margin: 10px;
-} */
+
+#myWarning {
+  color: orangered;
+}
+
 .myProjectItem p {
   margin-top: -6px;
+}
+
+
+@media only screen and (max-device-width: 700px) {
+  .Project {
+    width: 90%;
+  }
 }

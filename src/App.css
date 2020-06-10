@@ -1,3 +1,4 @@
+/* TODO remove unnecessary files in the fonts folder */
 @font-face {
   font-family: 'MyOpenSans';
   src: url('./fonts/OpenSans-Regular.ttf');
@@ -22,19 +23,23 @@
 }
 .myHeader nav {
   margin: 0 auto;
-  /* text-align: center; */
   padding: 30px;
-  /* padding-top: 50px; */
   display: table;
   border-spacing: 15px;
 }
 .myHeader h3 {
-  /* text-align: center; */
   display: table-cell;
 }
 
 .myContent {
   text-align: center;
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
+}
+
+
+@media only screen and (max-device-width: 700px) {
+  .myContent {
+    width: 100%;
+  }
 }
