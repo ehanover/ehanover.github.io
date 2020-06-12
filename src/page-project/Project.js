@@ -1,12 +1,11 @@
-import React, { useState } from 'react';
 import './Project.css';
+import React, { useState } from 'react';
 import { Link } from '@reach/router';
-import ReactMarkdown from 'react-markdown';
-
-import Row from 'react-bootstrap/Row';
 import Container from 'react-bootstrap/Container';
 import Col from 'react-bootstrap/Col';
 import projectListJson from '../projects.json';
+import ReactMarkdown from 'react-markdown';
+import Row from 'react-bootstrap/Row';
 
 function Project(props) {
   const thisProject = projectListJson.projects.find((other) => other.github === props.github);
@@ -39,7 +38,7 @@ function Project(props) {
             </a>
           </Col>
           <Col md={4}>
-            <p> Made in {thisProject.date} </p>
+            <p>Made in {thisProject.date}</p>
           </Col>
           <Col md={4}>
             <p>{thisProject.technologies.join(', ')}</p>

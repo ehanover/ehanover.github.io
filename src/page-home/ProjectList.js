@@ -1,6 +1,6 @@
-import React from 'react';
 import './ProjectList.css';
 import { Link } from '@reach/router';
+import React from 'react';
 import projectListJson from '../projects.json';
 
 function ProjectList(props) {

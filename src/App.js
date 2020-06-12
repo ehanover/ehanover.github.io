@@ -1,16 +1,9 @@
-import React from 'react';
+import './App.css';
 import { Router } from '@reach/router'; // https://reach.tech/router
-// import { Switch, HashRouter, Route, Link as HashLink } from 'react-router-dom'
+// import { HashRouter, Link as HashLink, Route, Switch } from 'react-router-dom'
 import Home from './page-home/Home.js';
 import Project from './page-project/Project.js';
-// import Home from './page-home/Home.js';
-// import Project from './page-project/Project.js'
-// import Navbar from 'react-bootstrap/Navbar'
-// import Nav from 'react-bootstrap/Nav'
-// import Form from 'react-bootstrap/Form'
-// import FormControl from 'react-bootstrap/FormControl'
-// import Button from 'react-bootstrap/Button'
-import './App.css';
+import React from 'react';
 
 function App() {
   return (

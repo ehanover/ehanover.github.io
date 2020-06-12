@@ -1,14 +1,14 @@
-import React from 'react';
 import './Home.css';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
-import ProjectList from './ProjectList.js';
+import Col from 'react-bootstrap/Col';
+import Container from 'react-bootstrap/Container';
+import EmailLogo from '../images/email.png';
 import GitHubLogo from '../images/GitHub-Mark-120px-plus.png';
 import LinkedInLogo from '../images/LI-In-Bug.png';
-import EmailLogo from '../images/email.png';
 import Portrait from '../images/portrait.png'; // TODO update portrait
+import ProjectList from './ProjectList.js';
+import React from 'react';
+import Row from 'react-bootstrap/Row';
 
 function Home(props) {
   function scrollToInfo() {
