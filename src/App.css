@@ -10,6 +10,14 @@
   /*  format('truetype') */
 }
 
+p {
+  font-size: large;
+}
+
+body {
+  background-color: aliceblue;
+}
+
 .titleFont {
   font-family: 'MyWorkSans';
 }
@@ -33,7 +41,7 @@
 
 .myContent {
   text-align: center;
-  width: 80%;
+  width: 65%;
   margin: 0 auto;
 }
 

@@ -13,7 +13,9 @@ function Project(props) {
   document.title = `Ethan Hanover - ${thisProject.title}`;
   const [markdown, setMarkdown] = useState('\n*Loading...*');
 
-  const url = `https://raw.githubusercontent.com/ehanover/${thisProject.github}/master/README.md`;
+  // const url = `https://raw.githubusercontent.com/ehanover/${thisProject.github}/master/README.md`; // Gets README from the actual repository
+  const url = `https://raw.githubusercontent.com/ehanover/ehanover.github.io-content/master/${thisProject.github}/README.md`
+  
   fetch(url).then((resUrl) => {
     resUrl.text().then((resText) => {
       setMarkdown(resText);

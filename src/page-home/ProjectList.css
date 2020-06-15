@@ -1,7 +1,10 @@
-.Project {
+.ProjectEntry {
+  width: 90%;
   text-align: left;
-  width: 70%;
   margin: 0 auto;
+}
+.ProjectEntry h2 {
+  margin-bottom: 18px;
 }
 
 #projectsAnchor {

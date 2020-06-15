@@ -1,0 +1,40 @@
+.ResumeEntries {
+  /* background-color:blanchedalmond; */
+  width: 77%;
+  text-align: left;
+  margin: 0 auto;
+}
+.ResumeEntry {
+  /* background-color: azure; */
+  display: flex;
+  padding: 8px;
+}
+.ResumeEntry img {
+  /* border: 4px solid #007bff; */
+  border: 4px solid black;
+  border-radius: 10px;
+  height: 80px;
+  width: 80px;
+}
+.ResumeEntryBody {
+  padding-left: 12px;
+  padding-top: 4px;
+}
+.ResumeEntryBodyTitle {
+  display: flex;
+}
+.ResumeEntryBodyitle h3,
+.ResumeEntryBodyTitle h5 {
+  align-self: center;
+}
+.ResumeEntryBody li {
+  /* background-color: aqua; */
+  margin: 0px 0;
+  margin-left: -10px;
+}
+
+.ResumeBio {
+  width: 90%;
+  text-align: left;
+  margin: 0 auto;
+}

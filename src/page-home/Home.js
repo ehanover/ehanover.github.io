@@ -8,6 +8,7 @@ import LinkedInLogo from '../images/LI-In-Bug.png';
 import Portrait from '../images/portrait.png'; // TODO update portrait
 import ProjectList from './ProjectList.js';
 import React from 'react';
+import Resume from './Resume.js';
 import Row from 'react-bootstrap/Row';
 
 function Home(props) {
@@ -26,7 +27,6 @@ function Home(props) {
           <Button variant="link" onClick={scrollToInfo}><h3>About Me</h3></Button>
           <h3>|</h3>
           <Button variant="link" onClick={scrollToProjects}><h3>My Projects</h3></Button>
-          {/* <h3>Test <Button variant="link" onClick={scrollToInfo}>About Me></Button></h3> */}
         </nav>
       </div>
       <Container>
@@ -45,7 +45,7 @@ function Home(props) {
                 <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/ethan-hanover-201a15186/"><img className="myHover" src={LinkedInLogo} width="40" alt="LinkedIn link" /></a>
               </Col>
               <Col>
-                <a target="_blank" rel="noopener noreferrer" href="mailto:ephanover@gmail.com"><img className="myHover" src={EmailLogo} width="40" alt="Email link" /></a>
+                <a href="mailto:ephanover@gmail.com"><img className="myHover" src={EmailLogo} width="40" alt="Email link" /></a>
               </Col>
               <Col md={2} />
             </Row>
@@ -63,7 +63,15 @@ function Home(props) {
       {/* <h1 className="titleFont">Experience</h1>  TODO could add brief experience section */}
       <br />
       <br />
+      <Resume />
+      <br />
+      <br />
+      <br />
       <ProjectList />
+      <br />
+      <br />
+      <br />
+      <br />
     </div>
   );
 }

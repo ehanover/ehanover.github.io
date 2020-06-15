@@ -17,9 +17,23 @@ function ProjectList(props) {
   }
 
   return (
-    <div className="Project">
-      <h1 className="titleFont" id="projectsAnchor">My Projects</h1>
+    <div className="ProjectEntry">
       <h4 id="myWarning"><i>The content at the following links is placeholder information and will be improved soon.</i></h4>
+      <h2 className="titleFont" id="projectsAnchor">Favorite Projects</h2>
+      {projectListJson.favorites.map(function(n) {
+        const p = projectListJson.projects.find(t => Number(t.id) === n);
+        return (<div key={n} className="myProjectItem">
+          <h4>
+            <Link to={`/project/${p.github}`}>
+              {'★ ' + p.date + ' - ' + p.title}
+            </Link>
+          </h4>
+          <p>{p.technologies.join(', ')}</p>
+        </div>);
+      })}
+      <br />
+
+      <h2 className="titleFont">All Projects</h2>
       {projectListJson.projects.sort(projectListSort).map((p) => (
         <div key={p.id} className="myProjectItem">
           <h4>
