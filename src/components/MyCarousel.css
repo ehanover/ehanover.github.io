@@ -1,0 +1,31 @@
+.MyCarouselImage {
+  height: 450px;
+  width: auto;
+}
+
+.MyCarouselNextIcon {
+  width: 30%;
+  height: auto;
+}
+
+.MyCarouselPrevIcon {
+  width: 30%;
+  height: auto;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.MyCarouselCaption {
+  left: auto;
+  right: auto;
+  position: relative;
+}
+
+.MyCarouselCaption span {
+  padding-top: 8px;
+  color: black;
+}
+
+.carousel-indicators li {
+  background-color: grey;
+}

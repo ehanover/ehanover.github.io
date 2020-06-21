@@ -1,7 +1,7 @@
 import './ProjectList.css';
 import { Link } from '@reach/router';
 import React from 'react';
-import projectListJson from '../projects.json';
+import MyCarousel from '../components/MyCarousel';
 
 function ProjectList(props) {
   function projectListSort(a, b) {
@@ -15,27 +15,46 @@ function ProjectList(props) {
     }
     return 0;
   }
+  
+  const favoriteProjects = props.projectList.favoriteIds.map((id) => props.projectList.projects.find(t => Number(t.id) === id));
+  const allProjects = props.projectList.projects.sort(projectListSort);
+
+  let projectShowcaseImageUrls = [];
+  let projectShowcaseCaptions = [];
+  let projectShowcaseCaptionLinks = [];
+  props.projectList.projects.forEach(project => {
+    project.imageShowcaseNums.forEach(num => {
+      projectShowcaseImageUrls.push(`https://raw.githubusercontent.com/ehanover/ehanover.github.io-content/master/${project.github}/img${num}.jpg`);
+      projectShowcaseCaptions.push(project.title);
+      projectShowcaseCaptionLinks.push(`/project/${project.github}`);
+    });
+  });
 
   return (
-    <div className="ProjectEntry">
-      <h4 id="myWarning"><i>The content at the following links is placeholder information and will be improved soon.</i></h4>
-      <h2 className="titleFont" id="projectsAnchor">Favorite Projects</h2>
-      {projectListJson.favorites.map(function(n) {
-        const p = projectListJson.projects.find(t => Number(t.id) === n);
-        return (<div key={n} className="myProjectItem">
+    <div className="ProjectList">
+
+      <div className="ProjectListCarousel">
+        <MyCarousel urls={projectShowcaseImageUrls} captions={projectShowcaseCaptions} links={projectShowcaseCaptionLinks} shuffle={false}/>
+      </div>
+
+      {/* <h4 id="MyWarning"><i>The content at the following links is placeholder information and will be improved soon.</i></h4> */}
+      <h2 className="titleFont" id="ProjectsAnchor">Favorite Projects</h2>
+      
+      {favoriteProjects.map((p) => (
+        <div key={p.id} className="ProjectListItem">
           <h4>
             <Link to={`/project/${p.github}`}>
               {'★ ' + p.date + ' - ' + p.title}
             </Link>
           </h4>
           <p>{p.technologies.join(', ')}</p>
-        </div>);
-      })}
+        </div>
+      ))}
       <br />
 
       <h2 className="titleFont">All Projects</h2>
-      {projectListJson.projects.sort(projectListSort).map((p) => (
-        <div key={p.id} className="myProjectItem">
+      {allProjects.map((p) => (
+        <div key={p.id} className="ProjectListItem">
           <h4>
             <Link to={`/project/${p.github}`}>
               {p.date + ' - ' + p.title}

@@ -13,10 +13,10 @@ import Row from 'react-bootstrap/Row';
 
 function Home(props) {
   function scrollToInfo() {
-    document.getElementById('infoAnchor').scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' });
+    document.getElementById('InfoAnchor').scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' });
   }
   function scrollToProjects() {
-    document.getElementById('projectsAnchor').scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' });
+    document.getElementById('ProjectsAnchor').scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' });
   }
   document.title = 'Ethan Hanover';
 
@@ -34,7 +34,7 @@ function Home(props) {
           <Col>
             <br />
             <br />
-            <h1 id="infoAnchor" className="titleFont">Ethan Hanover</h1>
+            <h1 id="InfoAnchor" className="titleFont">Ethan Hanover</h1>
             <br />
             <Row>
               <Col md={2} />
@@ -67,7 +67,7 @@ function Home(props) {
       <br />
       <br />
       <br />
-      <ProjectList />
+      <ProjectList projectList={props.projectList}/>
       <br />
       <br />
       <br />

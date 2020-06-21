@@ -43,10 +43,11 @@ function Resume(props) {
 
         <p>I've played trombone and euphonium for many years and I'm a member of the Cavalier Marching Band at UVA.
         Joining the marching band was one of the best decisions I've made in college. Not only is it fun and rewarding, 
-        but I've also met so many great people.</p>
+        but I've also met so many great people. TODO.</p>
       </div>
       <br />
       <br />
+
       <div className="ResumeEntries">
         <h2 className="titleFont">Professional Experience</h2>
         {experiences.map((o, index) => (

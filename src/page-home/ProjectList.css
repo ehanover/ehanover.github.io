@@ -1,21 +1,27 @@
-.ProjectEntry {
+.ProjectList {
   width: 90%;
   text-align: left;
   margin: 0 auto;
 }
+.ProjectListCarousel {
+  /* width: 100%; */
+  text-align: center;
+  margin: 0 auto;
+}
+
+#ProjectsAnchor {
+  margin-bottom: 18px;
+}
+
+#MyWarning {
+  color: orangered;
+}
+
 .ProjectEntry h2 {
   margin-bottom: 18px;
 }
 
-#projectsAnchor {
-  margin-bottom: 18px;
-}
-
-#myWarning {
-  color: orangered;
-}
-
-.myProjectItem p {
+.ProjectListItem p {
   margin-top: -6px;
 }
 

@@ -3,19 +3,24 @@ import React, { useState } from 'react';
 import { Link } from '@reach/router';
 import Container from 'react-bootstrap/Container';
 import Col from 'react-bootstrap/Col';
-import projectListJson from '../projects.json';
+import MyCarousel from '../components/MyCarousel';
 import ReactMarkdown from 'react-markdown';
 import Row from 'react-bootstrap/Row';
 
 function Project(props) {
-  const thisProject = projectListJson.projects.find((other) => other.github === props.github);
+  const thisProject = props.projectList.projects.find((other) => other.github === props.github);
 
   document.title = `Ethan Hanover - ${thisProject.title}`;
   const [markdown, setMarkdown] = useState('\n*Loading...*');
 
   // const url = `https://raw.githubusercontent.com/ehanover/${thisProject.github}/master/README.md`; // Gets README from the actual repository
   const url = `https://raw.githubusercontent.com/ehanover/ehanover.github.io-content/master/${thisProject.github}/README.md`
-  
+  const imageUrls = [...Array(thisProject.imageNum).keys()].map((i) =>
+    // Weird syntax to mimic Python's "range(imageNum)"
+    `https://raw.githubusercontent.com/ehanover/ehanover.github.io-content/master/${thisProject.github}/img${i+1}.jpg`
+  );
+  const imageCaptions = thisProject.imageCaptions;
+
   fetch(url).then((resUrl) => {
     resUrl.text().then((resText) => {
       setMarkdown(resText);
@@ -49,9 +54,17 @@ function Project(props) {
       </Container>
       <hr />
       <br />
+      <div>
+        <MyCarousel urls={imageUrls} captions={imageCaptions} shuffle={false}/>
+      </div>
+
       <div id="myReactMarkdown">
         <ReactMarkdown source={markdown} />
       </div>
+      <br />
+      <br />
+      <br /> 
+      {/* TODO add a bunch of line breaks so you can scroll? */}
     </div>
   );
 }

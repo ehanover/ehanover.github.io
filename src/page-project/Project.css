@@ -2,12 +2,17 @@
   text-align: center;
 }
 
+#myReactMarkdown {
+  text-align: start;
+}
+
 #myReactMarkdown h1,
 #myReactMarkdown h2,
 #myReactMarkdown h3,
 #myReactMarkdown h4,
 #myReactMarkdown h5,
-#myReactMarkdown h6 {
+#myReactMarkdown h6, 
+#myReactMarkdown li {
   /* This is basically copy-pasted from .titleFont because there is no css direct inheritance */
   font-family: 'MyWorkSans';
 }
