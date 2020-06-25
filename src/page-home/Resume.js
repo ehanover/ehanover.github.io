@@ -2,7 +2,7 @@ import './Resume.css';
 import React from 'react';
 import CapitaloneLogo from '../images/capitalonelogo.png'
 import UvaLogo from '../images/uvalogo.png';
-import SaicLogo from '../images/saiclogo.jpeg';
+import SaicLogo from '../images/saiclogo.png';
 
 function Resume(props) {
 
@@ -11,41 +11,39 @@ function Resume(props) {
       image: UvaLogo,
       date: "2019 - 2023 Expected",
       title: "University of Virginia",
-      text: ["Bachelor of Science in Computer Science",
-        "Latest GPA: 3.83"],
+      text: ["Bachelor of Science in Computer Science", "Latest GPA: 3.83"],
     },
     {
       image: SaicLogo,
       date: "June 2019",
       title: "SAIC",
-      // text: ["Calculated and visualized satellite orbital mechanics using Python and Excel"],
-      text: ["Learned concepts of satellite/optical imagery and orbital mechanics",
+      text: ["Studied concepts of orbital mechanics and satellite/optical imagery",
         "Created visualization models of orbital components using Python and Microsoft Excel"]
     },
     {
       image: CapitaloneLogo,
       date: "August 2020",
       title: "Capital One",
-      text: ["TODO"],
+      text: ["Coming Soon"],
     },
   ];
 
   return (
     <div className="Resume">
       <div className="ResumeBio">
-        <p> Since middle school, I've loved experimenting with aspects of programming and computer science. 
-        I love how computer science has abstraction or whatever. TODO.</p>
-        
-        <p>At UVA, I'm involved with the Mechatronics and Robotics club, where we build rovers to compete
-        in an annual NASA-sponsored contest in Florida. The club is a great way for me to apply what I've been 
-        learning in the classroom to a physical and fun platform. But every time the club meets I always learn
-        something new about robotics and computer science. </p>
+        <p>I first started programming with an Arduino board in middle school. Ever since then, the elegance and 
+        power of computer science has interested me. Now, I like to practice a wide variety of coding skills in my 
+        projects on this site. </p>
+
+        <p>At UVA, I'm involved with the Mechatronics and Robotics club, where we build autonomous rovers to compete
+        at an annual contest in Florida held by NASA. The club is a great way for me to apply what I've been 
+        learning in the classroom to a platform that's exciting and engaging. Every time the club meets I'm 
+        always able to learn something new about computer science and robotics. </p>
 
         <p>I've played trombone and euphonium for many years and I'm a member of the Cavalier Marching Band at UVA.
-        Joining the marching band was one of the best decisions I've made in college. Not only is it fun and rewarding, 
-        but I've also met so many great people. TODO.</p>
+        Joining the marching band was one of the best decisions I've made in college. I've also met so many great 
+        people through band and the performances always lead to unique and memorable experiences. </p>
       </div>
-      <br />
       <br />
 
       <div className="ResumeEntries">
@@ -75,7 +73,8 @@ function Resume(props) {
           <a target="_blank" rel="noopener noreferrer" href="mailto:ephanover@gmail.com">send me an email</a>.
         </h3>
       </div>
-
+      <br />
+      <hr />
     </div>
   );
 }

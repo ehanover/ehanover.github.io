@@ -21,7 +21,7 @@
   position: relative;
 }
 
-.MyCarouselCaption span {
+.MyCarouselCaption p {
   padding-top: 8px;
   color: black;
 }

@@ -52,26 +52,21 @@ function Home(props) {
             <hr />
             <h3>
               I'm a second year computer science student at the University of Virginia. 
-              I like making projects to learn new skills.
+              I like to make projects so I can learn new skills.
             </h3>
           </Col>
           <Col>
-            <img id="myPortrait" src={Portrait} width="550" alt="Portrait" />
+            <img id="myPortrait" src={Portrait} width="500" alt="Portrait" />
           </Col>
         </Row>
       </Container>
-      {/* <h1 className="titleFont">Experience</h1>  TODO could add brief experience section */}
       <br />
       <br />
+
       <Resume />
-      <br />
-      <br />
-      <br />
       <ProjectList projectList={props.projectList}/>
-      <br />
-      <br />
-      <br />
-      <br />
+      {/* TODO add footer? Maybe just a smiley face or something? Maybe thank the reader? */}
+
     </div>
   );
 }

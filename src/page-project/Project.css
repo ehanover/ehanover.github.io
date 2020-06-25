@@ -11,8 +11,9 @@
 #myReactMarkdown h3,
 #myReactMarkdown h4,
 #myReactMarkdown h5,
-#myReactMarkdown h6, 
-#myReactMarkdown li {
-  /* This is basically copy-pasted from .titleFont because there is no css direct inheritance */
+#myReactMarkdown h6 {
+  /* This is basically copy-pasted from .titleFont because there is no css inheritance? */
   font-family: 'MyWorkSans';
+  margin-top: 24px;
+  margin-bottom: 4px;
 }

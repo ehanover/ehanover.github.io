@@ -38,7 +38,7 @@ function ProjectList(props) {
       </div>
 
       {/* <h4 id="MyWarning"><i>The content at the following links is placeholder information and will be improved soon.</i></h4> */}
-      <h2 className="titleFont" id="ProjectsAnchor">Favorite Projects</h2>
+      <h2 className="titleFont" id="ProjectsAnchor">My Favorite Projects</h2>
       
       {favoriteProjects.map((p) => (
         <div key={p.id} className="ProjectListItem">
@@ -63,8 +63,6 @@ function ProjectList(props) {
           <p>{p.technologies.join(', ')}</p>
         </div>
       ))}
-      <br />
-      <br />
     </div>
   );
 }

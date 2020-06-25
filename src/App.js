@@ -26,13 +26,6 @@ function App() {
   } else {
     return (
       <div className="App bodyFont">
-        {/* <div className="myHeader titleFont">
-          <nav>
-            <h3><HashLink to="/home">About Me</HashLink></h3>
-            <h3>  |  </h3>
-            <h3><HashLink to="/home#projectsAnchor">My Projects</HashLink></h3>
-          </nav>
-        </div> */}
         <div className="myContent">
           <Router>
             <Home projectList={projectList} path="/" />

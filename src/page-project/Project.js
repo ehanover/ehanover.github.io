@@ -4,7 +4,7 @@ import { Link } from '@reach/router';
 import Container from 'react-bootstrap/Container';
 import Col from 'react-bootstrap/Col';
 import MyCarousel from '../components/MyCarousel';
-import ReactMarkdown from 'react-markdown';
+import ReactMarkdown from 'react-markdown/with-html';
 import Row from 'react-bootstrap/Row';
 
 function Project(props) {
@@ -59,12 +59,13 @@ function Project(props) {
       </div>
 
       <div id="myReactMarkdown">
-        <ReactMarkdown source={markdown} />
+        <ReactMarkdown source={markdown} escapeHtml={false}/>
       </div>
+      <br /> {/* Add a bunch of line breaks so you can scroll? */}
       <br />
       <br />
-      <br /> 
-      {/* TODO add a bunch of line breaks so you can scroll? */}
+      <br />
+      <br />
     </div>
   );
 }
