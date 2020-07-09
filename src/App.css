@@ -1,13 +1,26 @@
 /* TODO remove unnecessary files in the fonts folder */
 @font-face {
-  font-family: 'MyOpenSans';
-  src: url('./fonts/OpenSans-Regular.ttf');
-  /*  format('truetype') */
+  font-family: 'MyWorkSans';
+  src: url('./fonts/WorkSans-VariableFont_wght.ttf') format('truetype-variations');
+  font-weight: 1 999;
 }
 @font-face {
+  font-family: 'MyOpenSans';
+  src: url('./fonts/OpenSans-Regular.ttf');
+}
+
+.titleFont {
   font-family: 'MyWorkSans';
-  src: url('./fonts/WorkSans-VariableFont_wght.ttf');
-  /*  format('truetype') */
+  font-weight: 450;
+
+  /* Possible tweaks to fix font weight? */
+  /* text-shadow: 1px 1px 1px rgba(0,0,0,0.004); */
+  /* text-rendering: optimizeLegibility !important; */
+  /* -webkit-font-smoothing: antialiased !important; */
+}
+.bodyFont {
+   /* TODO is all the body text too big? What about on mobile? */
+  font-family: 'MyOpenSans';
 }
 
 p, ul {
@@ -16,15 +29,6 @@ p, ul {
 
 body {
   background-color: aliceblue;
-}
-
-/* TODO the title font looks differentin Firefox and Chrome - 
-    it looks like the problem is normal vs. light font weight? */
-.titleFont {
-  font-family: 'MyWorkSans';
-}
-.bodyFont {
-  font-family: 'MyOpenSans';
 }
 
 .myHeader {
@@ -50,6 +54,6 @@ body {
 
 @media only screen and (max-device-width: 700px) {
   .myContent {
-    width: 100%;
+    width: 95%;
   }
 }

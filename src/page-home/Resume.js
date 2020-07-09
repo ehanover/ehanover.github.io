@@ -35,14 +35,14 @@ function Resume(props) {
         power of computer science has interested me. Now, I like to practice a wide variety of coding skills in my 
         projects on this site. </p>
 
-        <p>At UVA, I'm involved with the Mechatronics and Robotics club, where we build autonomous rovers to compete
+        <p>At UVA, I'm involved with the Mechatronics and Robotics club where we build autonomous rovers to compete
         at an annual contest in Florida held by NASA. The club is a great way for me to apply what I've been 
-        learning in the classroom to a platform that's exciting and engaging. Every time the club meets I'm 
-        always able to learn something new about computer science and robotics. </p>
+        learning in the classroom to a platform that's exciting and engaging. Every time the club meets I 
+        always learn something new about computer science and robotics. </p>
 
         <p>I've played trombone and euphonium for many years and I'm a member of the Cavalier Marching Band at UVA.
         Joining the marching band was one of the best decisions I've made in college. I've also met so many great 
-        people through band and the performances always lead to unique and memorable experiences. </p>
+        people through band and the performances always lead to exciting and memorable experiences. </p>
       </div>
       <br />
 
@@ -50,9 +50,10 @@ function Resume(props) {
         <h2 className="titleFont">Professional Experience</h2>
         {experiences.map((o, index) => (
           <div key={index} className="ResumeEntry">
-            <img src={o.image} alt={o.title}/>
+            <img className="ResumeEntryImage" src={o.image} alt={o.title}/>
             <div className="ResumeEntryBody">
               <div className="ResumeEntryBodyTitle">
+                <pre> </pre>
                 <h3 className="titleFont">{o.title}</h3>
                 <pre>  </pre>
                 <h5>{o.date}</h5>
@@ -67,6 +68,7 @@ function Resume(props) {
             </div>
           </div>
         ))}
+        <br />
         <h3 className="titleFont">For more information, <span></span>
           {/* <a target="_blank" rel="noopener noreferrer" href="">my resume</a> or <span></span> */}
           <span><s>take a look at my resume</s> or </span>

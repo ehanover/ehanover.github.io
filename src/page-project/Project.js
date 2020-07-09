@@ -10,6 +10,7 @@ import Row from 'react-bootstrap/Row';
 function Project(props) {
   const thisProject = props.projectList.projects.find((other) => other.github === props.github);
 
+  window.scrollTo(0, 0);
   document.title = `Ethan Hanover - ${thisProject.title}`;
   const [markdown, setMarkdown] = useState('\n*Loading...*');
 
@@ -54,8 +55,8 @@ function Project(props) {
       </Container>
       <hr />
       <br />
-      <div>
-        <MyCarousel urls={imageUrls} captions={imageCaptions} shuffle={false}/>
+      <div id="myCarouselContainer">
+        <MyCarousel id="myCarousel" urls={imageUrls} captions={imageCaptions} shuffle={false}/>
       </div>
 
       <div id="myReactMarkdown">

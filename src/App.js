@@ -27,6 +27,8 @@ function App() {
     return (
       <div className="App bodyFont">
         <div className="myContent">
+          {/* TODO you can't type a project url directly into the address bar, it says page not found.
+            This is probably because of the SPA nature of the router or the hosting rules on github (eg. user site vs. project site) */}
           <Router>
             <Home projectList={projectList} path="/" />
             <Project projectList={projectList} path="/project/:github" />

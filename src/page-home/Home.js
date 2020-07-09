@@ -50,10 +50,10 @@ function Home(props) {
               <Col md={2} />
             </Row>
             <hr />
-            <h3>
+            <h4>
               I'm a second year computer science student at the University of Virginia. 
               I like to make projects so I can learn new skills.
-            </h3>
+            </h4>
           </Col>
           <Col>
             <img id="myPortrait" src={Portrait} width="500" alt="Portrait" />

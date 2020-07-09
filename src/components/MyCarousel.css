@@ -29,3 +29,16 @@
 .carousel-indicators li {
   background-color: grey;
 }
+
+
+@media only screen and (max-device-width: 700px) {
+  .MyCarouselImage {
+    height: 180px;
+  }
+  .MyCarouselNextIcon {
+    width: 50%;
+  }
+  .MyCarouselPrevIcon {
+    width: 50%;
+  }
+}
