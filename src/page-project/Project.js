@@ -62,11 +62,7 @@ function Project(props) {
       <div id="myReactMarkdown">
         <ReactMarkdown source={markdown} escapeHtml={false}/>
       </div>
-      <br /> {/* Add a bunch of line breaks so you can scroll? */}
-      <br />
-      <br />
-      <br />
-      <br />
+
     </div>
   );
 }

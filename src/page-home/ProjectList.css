@@ -1,5 +1,4 @@
 .ProjectList {
-  width: 90%;
   text-align: left;
   margin: 0 auto;
   margin-bottom: 300px;
@@ -11,23 +10,19 @@
 }
 
 #ProjectsAnchor {
-  margin-bottom: 18px;
+  margin-top: 10px;
 }
 
-#MyWarning {
-  color: orangered;
-}
-
-.ProjectEntry h2 {
+/* .ProjectEntry h2 {
   margin-bottom: 18px;
-}
+} */
 
 .ProjectListItem p {
   margin-top: -6px;
 }
 
 
-@media only screen and (max-device-width: 700px) {
+@media only screen and (max-device-width: 800px) {
   .Project {
     width: 90%;
   }

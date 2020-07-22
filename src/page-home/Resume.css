@@ -3,13 +3,12 @@
 }
 
 .ResumeBio {
-  width: 90%;
   text-align: left;
   margin: 0 auto;
 }
 
 .ResumeEntries {
-  width: 77%;
+  width: 85%;
   text-align: left;
   margin: 0 auto;
 }
@@ -27,22 +26,26 @@
 .ResumeEntryBody {
   padding-left: 12px;
 }
-.ResumeEntryBodyTitle {
-  display: flex;
-  margin-top: -6px;
-  margin-bottom: -6px;
-}
-.ResumeEntryBodyTitle h3,
-.ResumeEntryBodyTitle h5 {
-  align-self: center;
-}
 .ResumeEntryBody li {
   margin: 0px 0;
   margin-left: -10px;
 }
+.ResumeEntryBodyHeader {
+  display: flex;
+  margin-top: -6px;
+  margin-bottom: -6px;
+}
+.ResumeEntryBodyHeader h3,
+.ResumeEntryBodyHeader h5 {
+  align-self: center;
+}
+.ResumeEntryBodyHeaderTitle {
+  padding: 4px;
+  padding-right: 18px;
+}
 
 
-@media only screen and (max-device-width: 700px) {
+@media only screen and (max-device-width: 800px) {
   .ResumeEntries {
     width: 95%;
   }

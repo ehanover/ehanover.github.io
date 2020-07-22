@@ -9,7 +9,7 @@ function Resume(props) {
   const experiences = [
     {
       image: UvaLogo,
-      date: "2019 - 2023 Expected",
+      date: "2019 - 2023",
       title: "University of Virginia",
       text: ["Bachelor of Science in Computer Science", "Latest GPA: 3.83"],
     },
@@ -52,10 +52,10 @@ function Resume(props) {
           <div key={index} className="ResumeEntry">
             <img className="ResumeEntryImage" src={o.image} alt={o.title}/>
             <div className="ResumeEntryBody">
-              <div className="ResumeEntryBodyTitle">
-                <pre> </pre>
-                <h3 className="titleFont">{o.title}</h3>
-                <pre>  </pre>
+              <div className="ResumeEntryBodyHeader">
+                {/* <pre> </pre> */}
+                <h3 className="ResumeEntryBodyHeaderTitle titleFont">{o.title}</h3>
+                {/* <pre>  </pre> */}
                 <h5>{o.date}</h5>
               </div>
               <ul>

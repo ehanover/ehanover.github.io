@@ -9,6 +9,14 @@
   src: url('./fonts/OpenSans-Regular.ttf');
 }
 
+/* html, body {
+  height: 100%;
+  overflow: auto;
+} */
+/* html { overflow-y:scroll; } */
+/* html, body{min-height:100%;}
+body{height:100vh;} */
+
 .titleFont {
   font-family: 'MyWorkSans';
   font-weight: 450;
@@ -23,37 +31,48 @@
   font-family: 'MyOpenSans';
 }
 
+.App {
+  /* background-color: rgba(50, 20, 20, 0.6); */
+  background-color: cornflowerblue;
+  /* text-align: center; */
+}
+
 p, ul {
   font-size: large;
 }
 
-body {
-  background-color: aliceblue;
-}
-
-.myHeader {
-  width: 100%;
-  text-align: center;
-}
-.myHeader nav {
-  margin: 0 auto;
-  padding: 30px;
-  display: table;
-  border-spacing: 15px;
-}
-.myHeader h3 {
-  display: table-cell;
-}
+/* body {
+  background-color: pink;
+} */
 
 .myContent {
+  background-color: aliceblue;
   text-align: center;
-  width: 65%;
+  width: 68%;
   margin: 0 auto;
+  padding: 28px;
+  padding-top: 0px;
+  /* padding-bottom: 0px; */
+
+  -moz-box-shadow:    1px 2px 8px 1px #ccc; /* l/r difference, t/b, blur, l+r+t+b */
+  -webkit-box-shadow: 1px 2px 8px 1px #ccc;
+  box-shadow:         1px 2px 8px 1px #ccc;
 }
 
 
-@media only screen and (max-device-width: 700px) {
+@media only screen and (max-device-width: 800px) {
+  p, ul {
+    font-size: medium;
+  }
+  /* TODO make h elements smaller */
+  /* .titleFont {
+    font-weight: 450;
+    font-size: x-large;
+  } */
+
   .myContent {
-    width: 95%;
+    width: 93%;
+    padding: 12px;
+    padding-top: 0px;
   }
 }
