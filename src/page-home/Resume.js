@@ -17,7 +17,7 @@ function Resume(props) {
       image: SaicLogo,
       date: "June 2019",
       title: "SAIC",
-      text: ["Studied concepts of orbital mechanics and satellite/optical imagery",
+      text: ["Studied orbital mechanics and satellite/optical imagery",
         "Created visualization models of orbital components using Python and Microsoft Excel"]
     },
     {
@@ -32,8 +32,8 @@ function Resume(props) {
     <div className="Resume">
       <div className="ResumeBio">
         <p>I first started programming with an Arduino board in middle school. Ever since then, the elegance and 
-        power of computer science has interested me. Now, I like to practice a wide variety of coding skills in my 
-        projects on this site. </p>
+        power of computer science has interested me. Now, I like to practice my coding skills on a wide variety of 
+        projects as shown on this site. </p>
 
         <p>At UVA, I'm involved with the Mechatronics and Robotics club where we build autonomous rovers to compete
         at an annual contest in Florida held by NASA. The club is a great way for me to apply what I've been 
@@ -69,9 +69,9 @@ function Resume(props) {
           </div>
         ))}
         <br />
-        <h3 className="titleFont">For more information, <span></span>
+        <h3 className="titleFont">For more information,
           {/* <a target="_blank" rel="noopener noreferrer" href="">my resume</a> or <span></span> */}
-          <span><s>take a look at my resume</s> or </span>
+          <span> <s>take a look at my full resume</s> or </span>
           <a target="_blank" rel="noopener noreferrer" href="mailto:ephanover@gmail.com">send me an email</a>.
         </h3>
       </div>

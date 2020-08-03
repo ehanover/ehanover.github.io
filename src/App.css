@@ -1,4 +1,4 @@
-/* TODO remove unnecessary files in the fonts folder */
+/* TODO remove unnecessary files in the fonts folder (they might get removed on build) */
 @font-face {
   font-family: 'MyWorkSans';
   src: url('./fonts/WorkSans-VariableFont_wght.ttf') format('truetype-variations');
@@ -9,13 +9,6 @@
   src: url('./fonts/OpenSans-Regular.ttf');
 }
 
-/* html, body {
-  height: 100%;
-  overflow: auto;
-} */
-/* html { overflow-y:scroll; } */
-/* html, body{min-height:100%;}
-body{height:100vh;} */
 
 .titleFont {
   font-family: 'MyWorkSans';
@@ -27,23 +20,12 @@ body{height:100vh;} */
   /* -webkit-font-smoothing: antialiased !important; */
 }
 .bodyFont {
-   /* TODO is all the body text too big? What about on mobile? */
   font-family: 'MyOpenSans';
-}
-
-.App {
-  /* background-color: rgba(50, 20, 20, 0.6); */
-  background-color: cornflowerblue;
-  /* text-align: center; */
 }
 
 p, ul {
   font-size: large;
 }
-
-/* body {
-  background-color: pink;
-} */
 
 .myContent {
   background-color: aliceblue;
@@ -54,7 +36,7 @@ p, ul {
   padding-top: 0px;
   /* padding-bottom: 0px; */
 
-  -moz-box-shadow:    1px 2px 8px 1px #ccc; /* l/r difference, t/b, blur, l+r+t+b */
+  -moz-box-shadow:    1px 2px 8px 1px #ccc;
   -webkit-box-shadow: 1px 2px 8px 1px #ccc;
   box-shadow:         1px 2px 8px 1px #ccc;
 }
@@ -71,8 +53,12 @@ p, ul {
   } */
 
   .myContent {
-    width: 93%;
+    width: 94%;
     padding: 12px;
     padding-top: 0px;
+
+    -moz-box-shadow:    1px 2px 4px 1px #ccc;
+    -webkit-box-shadow: 1px 2px 4px 1px #ccc;
+    box-shadow:         1px 2px 4px 1px #ccc;
   }
 }

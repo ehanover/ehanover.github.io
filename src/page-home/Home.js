@@ -14,6 +14,7 @@ import Row from 'react-bootstrap/Row';
 function Home(props) {
 
   const isMobile = window.innerWidth < 800; // TODO This doesn't account for changing page size without refresh
+  document.title = `Ethan Hanover`;
 
   function scrollToInfo() {
     document.getElementById('InfoAnchor').scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' });

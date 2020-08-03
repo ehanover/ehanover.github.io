@@ -59,6 +59,7 @@ function Project(props) {
         <MyCarousel id="myCarousel" urls={imageUrls} captions={imageCaptions} shuffle={false}/>
       </div>
 
+      {/* TODO make links in the markdown source open in new tabs */}
       <div id="myReactMarkdown">
         <ReactMarkdown source={markdown} escapeHtml={false}/>
       </div>
