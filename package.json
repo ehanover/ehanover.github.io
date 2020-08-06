@@ -1,6 +1,6 @@
 {
   "name": "ehanover.github.io",
-  "version": "1.1.0",
+  "version": "1.0.0",
   "private": true,
   "homepage": "https://ehanover.github.io",
   "repository": {
@@ -8,7 +8,6 @@
     "url": "https://github.com/ehanover/ehanover.github.io.git"
   },
   "dependencies": {
-    "@reach/router": "^1.3.3",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
@@ -20,6 +19,7 @@
     "react-bootstrap": "^1.0.1",
     "react-dom": "^16.13.1",
     "react-markdown": "^4.3.1",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
     "typescript": "^3.9.3"
   },

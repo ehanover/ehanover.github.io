@@ -6,7 +6,7 @@ import SaicLogo from '../images/saiclogo.png';
 
 function Resume(props) {
 
-  const experiences = [
+  const experiences = [ // TODO change order to be chronological or something
     {
       image: UvaLogo,
       date: "2019 - 2023",
@@ -24,7 +24,7 @@ function Resume(props) {
       image: CapitaloneLogo,
       date: "August 2020",
       title: "Capital One",
-      text: ["Coming Soon"],
+      text: ["Coming Soon"], // TODO update capital one info
     },
   ];
 

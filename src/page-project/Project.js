@@ -1,6 +1,6 @@
 import './Project.css';
 import React, { useState } from 'react';
-import { Link } from '@reach/router';
+import { Link } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import Col from 'react-bootstrap/Col';
 import MyCarousel from '../components/MyCarousel';
@@ -8,16 +8,16 @@ import ReactMarkdown from 'react-markdown/with-html';
 import Row from 'react-bootstrap/Row';
 
 function Project(props) {
-  const thisProject = props.projectList.projects.find((other) => other.github === props.github);
+
+  const thisProject = props.projectList.projects.find((other) => other.github === props.match.params.github);
+  // TODO if the user manually navigates to a project that doesn't exist, this page crashes
+  const [markdown, setMarkdown] = useState('\n*Loading...*');
 
   window.scrollTo(0, 0);
   document.title = `Ethan Hanover - ${thisProject.title}`;
-  const [markdown, setMarkdown] = useState('\n*Loading...*');
 
-  // const url = `https://raw.githubusercontent.com/ehanover/${thisProject.github}/master/README.md`; // Gets README from the actual repository
   const url = `https://raw.githubusercontent.com/ehanover/ehanover.github.io-content/master/${thisProject.github}/README.md`
-  const imageUrls = [...Array(thisProject.imageNum).keys()].map((i) =>
-    // Weird syntax to mimic Python's "range(imageNum)"
+  const imageUrls = [...Array(thisProject.imageNum).keys()].map((i) => // Weird syntax to mimic Python's "range(imageNum)"
     `https://raw.githubusercontent.com/ehanover/ehanover.github.io-content/master/${thisProject.github}/img${i+1}.jpg`
   );
   const imageCaptions = thisProject.imageCaptions;

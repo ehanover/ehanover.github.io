@@ -1,5 +1,5 @@
 import './MyCarousel.css';
-import { Link } from '@reach/router';
+import { Link } from 'react-router-dom';
 import ButtonImage from '../images/carouselarrow.png';
 import Carousel from 'react-bootstrap/Carousel';
 import React from 'react';

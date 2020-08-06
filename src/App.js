@@ -1,8 +1,7 @@
 import './App.css';
 import './AppBackground.css';
-import { Router } from '@reach/router'; // https://reach.tech/router
+import { HashRouter as Router, Redirect, Route, Switch } from "react-router-dom";
 import React, { useState, useEffect } from 'react';
-// import { HashRouter, Link as HashLink, Route, Switch } from 'react-router-dom'
 import Home from './page-home/Home.js';
 import Project from './page-project/Project.js';
 
@@ -32,13 +31,15 @@ function App() {
       <div className="App bodyFont appBackground">
 
         <div className="myContent">
-          {/* TODO you can't type a project url directly into the address bar, it says page not found.
-            This is probably because of the SPA nature of the router or the hosting rules on github (eg. user site vs. project site) */}
-          {/* Maybe try using react-router instead of reach */}
-          {/* <Router basepath={process.env.PUBLIC_URL}> */}
           <Router>
-            <Home projectList={projectList} path={process.env.PUBLIC_URL + "/"} />
-            <Project projectList={projectList} path={process.env.PUBLIC_URL + "/project/:github"} />
+            {/* <Home projectList={projectList} path={process.env.PUBLIC_URL + "/"} /> */}
+            {/* <Project projectList={projectList} path={process.env.PUBLIC_URL + "/project/:github"} /> */}
+
+            <Switch>
+              <Route path="/project/:github" render={(props) => <Project projectList={projectList} {...props} /> } />
+              <Route exact path="/" render={(props) => <Home projectList={projectList} {...props} /> } />
+              <Redirect from="/*" to="/" />
+            </Switch>
           </Router>
         </div>
 
