@@ -1,4 +1,4 @@
-.myHeader {
+/* .myHeader {
   width: 100%;
   margin: 0 auto;
   padding-top: 40px;
@@ -7,22 +7,21 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  /* justify-content: space-around; */
 }
 .myHeaderColumn {
   padding: 10px;
   display: flex;
   flex-direction: column;
+} */
+
+.shortBioContainer {
+  text-align: center;
 }
 
 #myPortrait {
   border: 2px solid #021a40;
   height: 350px;
   width: auto;
-}
-
-#infoAnchor {
-  font-size: 32pt;
 }
 
 .iconRow {
@@ -38,18 +37,35 @@
   transform: scale(1.4); 
 }
 
+#myBio {
+  font-size: large;
+}
+
+#myFooterSpacer {
+  display: block;
+  height: 150px;
+}
+#myFooterText {
+  text-align: center;
+  padding: 0px;
+  margin: 0px;
+  color: grey;
+}
 
 @media only screen and (max-device-width: 800px) {
-  .myHeader {
+  /*.myHeader {
     padding-top: 15px;
     padding-bottom: 20px;
   }
   .myHeaderColumn {
     padding: 5px
-  }
+  }*/
 
   #myPortrait {
     height: 220px;
-    /* margin: 20px; */
+  }
+
+  #myBio {
+    font-size: small;
   }
 }

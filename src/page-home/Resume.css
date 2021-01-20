@@ -1,52 +1,43 @@
-.Resume {
-  margin-bottom: 60px;
+.ResumeTitle {
+  padding-bottom: 20px;
 }
-
-.ResumeBio {
-  text-align: left;
-  margin: 0 auto;
-}
-
 .ResumeEntries {
-  width: 85%;
-  text-align: left;
+  width: 95%;
   margin: 0 auto;
 }
 .ResumeEntry {
   display: flex;
-  padding: 4px;
-  padding-top: 14px;
+  padding: 8px;
+  /* height: 92px; */
 }
-.ResumeEntryImage {
+.ResumeEntry img {
   border: 2px solid black;
-  border-radius: 10px;
-  height: 70px;
-  width: auto;
+  border-radius: 8px;
+  height: 60px;
+  width: 60px;
 }
 .ResumeEntryBody {
-  padding-left: 12px;
-}
-.ResumeEntryBody li {
-  margin: 0px 0;
-  margin-left: -10px;
+  padding-left: 24px;
 }
 .ResumeEntryBodyHeader {
   display: flex;
-  margin-top: -6px;
-  margin-bottom: -6px;
+  margin-bottom: -2px;
 }
-.ResumeEntryBodyHeader h3,
+.ResumeEntryBodyHeader h4,
 .ResumeEntryBodyHeader h5 {
   align-self: center;
 }
 .ResumeEntryBodyHeaderTitle {
-  padding: 4px;
-  padding-right: 18px;
+  /* padding: 4px; */
+  padding-right: 16px;
 }
 
 
 @media only screen and (max-device-width: 800px) {
   .ResumeEntries {
-    width: 95%;
+    width: 96%;
+  }
+  .ResumeEntryBody li {
+  margin-left: -24px; 
   }
 }

@@ -60,9 +60,9 @@ function Project(props) {
       </div>
 
       {/* TODO make links in the markdown source open in new tabs */}
-      <div id="myReactMarkdown">
-        <ReactMarkdown source={markdown} escapeHtml={false}/>
-      </div>
+      <ReactMarkdown source={markdown} escapeHtml={false}/>
+
+      <span id="myProjectSpacer"></span>
 
     </div>
   );

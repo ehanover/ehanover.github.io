@@ -2,6 +2,7 @@ import './ProjectList.css';
 import { Link } from 'react-router-dom';
 import React from 'react';
 import MyCarousel from '../components/MyCarousel';
+import Table from 'react-bootstrap/Table';
 
 function ProjectList(props) {
   function projectListSort(a, b) {
@@ -16,7 +17,7 @@ function ProjectList(props) {
     return 0;
   }
   
-  const favoriteProjects = props.projectList.favoriteIds.map((id) => props.projectList.projects.find(t => Number(t.id) === id));
+  const favoriteProjectIds = props.projectList.favoriteIds;
   const allProjects = props.projectList.projects.sort(projectListSort);
 
   let projectShowcaseImageUrls = [];
@@ -32,37 +33,39 @@ function ProjectList(props) {
 
   return (
     <div className="ProjectList">
-      {/* <h1 className="titleFont">My Projects</h1> */}
+      <h1 id="ProjectsAnchor" className="titleFont">My Projects</h1>
       <div className="ProjectListCarousel">
         <MyCarousel urls={projectShowcaseImageUrls} captions={projectShowcaseCaptions} links={projectShowcaseCaptionLinks} shuffle={false}/>
       </div>
 
-      {/* <h4 id="MyWarning"><i>The content at the following links is placeholder information and will be improved soon.</i></h4> */}
-
-      <h2 className="titleFont" id="ProjectsAnchor">My Favorite Projects</h2>
-      {favoriteProjects.map((p) => (
-        <div key={p.id} className="ProjectListItem">
-          <h5>
-            <Link to={`/project/${p.github}`}>
-              {'★ ' + p.date + ' - ' + p.title}
-            </Link>
-          </h5>
-          <p>{p.technologies.join(', ')}</p>
-        </div>
-      ))}
-      <br />
-
-      <h2 className="titleFont">All Projects</h2>
-      {allProjects.map((p) => (
-        <div key={p.id} className="ProjectListItem">
-          <h5>
-            <Link to={`/project/${p.github}`}>
-              {p.date + ' - ' + p.title}
-            </Link>
-          </h5>
-          <p>{p.technologies.join(', ')}</p>
-        </div>
-      ))}
+      {/* <h2 className="titleFont">All Projects</h2> */}
+      <Table bordered hover >
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Title</th>
+            {/* <th>Coolness</th> */}
+            {/* <th>Effort</th> */}
+            <th>Technologies</th>
+          </tr>
+        </thead>
+        <tbody>
+          {allProjects.map((p) => (
+            <tr key={p.id} className="ProjectListItem">
+              <td>{p.date}</td>
+              <td>
+                {favoriteProjectIds.includes(p.id) ?  // This is a favorite project
+                  <Link to={`/project/${p.github}`} className="ProjectListTitleFavorite">★ {p.title}</Link>
+                : // Not a favorite project
+                <Link to={`/project/${p.github}`}>{p.title}</Link>
+                }
+              </td>
+              <td>{p.technologies.join(', ')}</td>
+            </tr>
+          ))}
+        </tbody>
+      </Table>
+      {/* <p>Projects with stars are ones that I think are extra cool. </p> */}
     </div>
   );
 }

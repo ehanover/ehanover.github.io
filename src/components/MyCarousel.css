@@ -1,15 +1,15 @@
 .MyCarouselImage {
-  height: 450px;
+  height: 350px;
   width: auto;
 }
 
 .MyCarouselNextIcon {
-  width: 30%;
+  width: 25%;
   height: auto;
 }
 
 .MyCarouselPrevIcon {
-  width: 30%;
+  width: 25%;
   height: auto;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
@@ -32,8 +32,11 @@
 
 
 @media only screen and (max-device-width: 800px) {
+  .MyCarousel {
+    height: 320px;
+  }
   .MyCarouselImage {
-    height: 180px;
+    height: 200px;
   }
   .MyCarouselNextIcon {
     width: 50%;

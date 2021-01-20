@@ -1,29 +1,25 @@
 .ProjectList {
-  text-align: left;
   margin: 0 auto;
-  margin-bottom: 300px;
 }
 .ProjectListCarousel {
-  /* width: 100%; */
   text-align: center;
   margin: 0 auto;
 }
 
-#ProjectsAnchor {
-  margin-top: 10px;
-}
-
-/* .ProjectEntry h2 {
-  margin-bottom: 18px;
-} */
-
-.ProjectListItem p {
-  margin-top: -6px;
+.ProjectListTitleFavorite {
+  font-size: large;
+  font-weight: 600;
 }
 
 
-/* @media only screen and (max-device-width: 800px) {
-  .Project {
-    width: 90%;
+@media only screen and (max-device-width: 800px) {
+  .ProjectListItem {
+    font-size: small;
   }
-} */
+  .ProjectListItem td {
+    padding: 8px;
+  }
+  .ProjectListTitleFavorite {
+    font-size: small;
+  }
+}

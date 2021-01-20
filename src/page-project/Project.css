@@ -3,13 +3,22 @@
   padding: 0px;
 }
 
+.myHeader {
+  padding: 36px;
+  text-align: center;
+}
+
 #myRowDetails {
   text-align: center;
 }
 
-#myReactMarkdown {
-  text-align: start;
-  padding-bottom: 200px;
+#myCarouselContainer {
+  text-align: center;
+}
+
+#myProjectSpacer {
+  display: block;
+  height: 150px;
 }
 
 #myReactMarkdown h1,
@@ -19,8 +28,9 @@
 #myReactMarkdown h5,
 #myReactMarkdown h6 {
   /* This is basically copy-pasted from .titleFont because there is no css inheritance? */
-  font-family: 'MyWorkSans';
+  /* font-family: 'MyWorkSans'; */
+  font-family: 'MyLato';
   margin-top: 24px;
-  margin-bottom: 4px;
+  /* margin-bottom: 4px; */
   /* font-weight: 550; */
 }

@@ -4,8 +4,9 @@ import { HashRouter as Router, Redirect, Route, Switch } from "react-router-dom"
 import React, { useState, useEffect } from 'react';
 import Home from './page-home/Home.js';
 import Project from './page-project/Project.js';
+import Spinner from 'react-bootstrap/Spinner';
 
-// TODO add a .nojekyll file in the root of the build folder
+// TODO add a .nojekyll file in the root of the build folder (but it gets deleted because of different branches)
 
 function App() {
 
@@ -24,7 +25,7 @@ function App() {
 
   if(projectList === '') {
     return (
-      <div className="App bodyFont"></div>
+      <div><Spinner animation="border"/></div>
     );
   } else {
     return (

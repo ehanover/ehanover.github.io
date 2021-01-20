@@ -5,14 +5,29 @@
   font-weight: 1 999;
 }
 @font-face {
+  font-family: 'MyLato';
+  src: url('./fonts/Lato-Regular.ttf');
+}
+@font-face {
   font-family: 'MyOpenSans';
   src: url('./fonts/OpenSans-Regular.ttf');
 }
 
+/* html, body {
+  height: 100%;
+}
+#root {
+  height: 100%;
+}
+.App {
+  height: 100%;
+} */
 
 .titleFont {
-  font-family: 'MyWorkSans';
-  font-weight: 450;
+  /* font-family: 'MyWorkSans'; */
+
+  font-family: 'MyLato';
+  /* font-size-adjust: 0.42; */
 
   /* Possible tweaks to fix font weight? */
   /* text-shadow: 1px 1px 1px rgba(0,0,0,0.004); */
@@ -21,44 +36,36 @@
 }
 .bodyFont {
   font-family: 'MyOpenSans';
-}
-
-p, ul {
-  font-size: large;
+  /* font-size-adjust: 0.55; */
 }
 
 .myContent {
-  background-color: aliceblue;
-  text-align: center;
-  width: 68%;
+  /* background-color: rgb(28, 42, 54); */
+  background-color: white;
+  width: 75%;
+  height: min-content;
+  text-align: left;
   margin: 0 auto;
-  padding: 28px;
+  padding: 52px;
   padding-top: 0px;
-  /* padding-bottom: 0px; */
 
-  -moz-box-shadow:    1px 2px 8px 1px #ccc;
-  -webkit-box-shadow: 1px 2px 8px 1px #ccc;
-  box-shadow:         1px 2px 8px 1px #ccc;
+  -moz-box-shadow:    1px 2px 8px 1px #999;
+  -webkit-box-shadow: 1px 2px 8px 1px #999;
+  box-shadow:         1px 2px 8px 1px #999;
 }
 
 
 @media only screen and (max-device-width: 800px) {
-  p, ul {
-    font-size: medium;
-  }
-  /* TODO make h elements smaller */
-  /* .titleFont {
-    font-weight: 450;
-    font-size: x-large;
-  } */
-
   .myContent {
-    width: 94%;
-    padding: 12px;
+    width: 96%;
+    padding: 10px;
     padding-top: 0px;
 
-    -moz-box-shadow:    1px 2px 4px 1px #ccc;
+    /* -moz-box-shadow:    1px 2px 4px 1px #ccc;
     -webkit-box-shadow: 1px 2px 4px 1px #ccc;
-    box-shadow:         1px 2px 4px 1px #ccc;
+    box-shadow:         1px 2px 4px 1px #ccc; */
+    -moz-box-shadow:    0px 0px 0px 0px;
+    -webkit-box-shadow: 0px 0px 0px 0px;
+    box-shadow:         0px 0px 0px 0px;
   }
 }

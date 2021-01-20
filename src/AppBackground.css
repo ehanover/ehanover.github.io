@@ -1,9 +1,10 @@
 .appBackground {
+/* #root { */
   /* https://leaverou.github.io/css3patterns/#weave */
   background:
-    linear-gradient(135deg, white 21px, #FCFCFC 22px, #FCFCFC 24px, transparent 24px, transparent 67px, #FCFCFC 67px, #FCFCFC 69px, transparent 69px),
-    linear-gradient(225deg, white 21px, #FCFCFC 22px, #FCFCFC 24px, transparent 24px, transparent 67px, #FCFCFC 67px, #FCFCFC 69px, transparent 69px)0 64px;
-  background-color: white;
+    linear-gradient(135deg, #005090 21px, #005393 22px, #005393 24px, transparent 24px, transparent 67px, #005393 67px, #005393 69px, transparent 69px),
+    linear-gradient(225deg, #005090 21px, #005393 22px, #005393 24px, transparent 24px, transparent 67px, #005393 67px, #005393 69px, transparent 69px)0 64px;
+  background-color: #005090;
   background-size: 64px 128px;
 
   /* -webkit-background-size: cover !important;

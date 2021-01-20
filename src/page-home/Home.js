@@ -1,5 +1,5 @@
 import './Home.css';
-import Button from 'react-bootstrap/Button';
+// import Button from 'react-bootstrap/Button';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import EmailLogo from '../images/email.png';
@@ -16,14 +16,14 @@ function Home(props) {
   const isMobile = window.innerWidth < 800; // TODO This doesn't account for changing page size without refresh
   document.title = `Ethan Hanover`;
 
-  function scrollToInfo() {
+  /* function scrollToInfo() {
     document.getElementById('InfoAnchor').scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' });
   }
   function scrollToProjects() {
     document.getElementById('ProjectsAnchor').scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' });
-  }
+  } */
 
-  const shortBioText = "I'm a second year computer science student at the University of Virginia. I like to make projects so I can learn new skills.";
+  const shortBio = <h5>I'm a second year computer science student at the University of Virginia. I like making fun projects to learn new skills. </h5>;
   const iconRow = <Row className="iconRow">
     <Col md={2} />
     <Col>
@@ -40,13 +40,15 @@ function Home(props) {
 
   return (
     <div className="Home">
-      <nav className="myHeader titleFont">
+      {/* <nav className="myHeader titleFont">
         <Button className="myHeaderColumn" variant="link" onClick={scrollToInfo}><h3>About Me</h3></Button>
         <span className="myHeaderColumn"> <h4>|</h4> </span>
         <Button className="myHeaderColumn" variant="link" onClick={scrollToProjects}><h3>My Projects</h3></Button>
-      </nav>
+      </nav> */}
       <br />
-      <Container>
+      <br />
+      <br />
+      <Container className="shortBioContainer">
         {isMobile ? 
           <div>
             <img id="myPortrait" src={Portrait} alt="Portrait" />
@@ -54,17 +56,18 @@ function Home(props) {
             <br />
             <h1 id="InfoAnchor" className="titleFont">Ethan Hanover</h1>
             {iconRow}
-            <h4>{shortBioText}</h4>
+            {shortBio}
             <hr />
-          </div> : 
+          </div>
+          :
           <Row>
             <Col>
               <br />
               <h1 id="InfoAnchor" className="titleFont">Ethan Hanover</h1>
               <br />
-              { iconRow }
+              {iconRow}
               <hr />
-              <h4>{shortBioText}</h4>
+              {shortBio}
             </Col>
             <Col>
               <img id="myPortrait" src={Portrait} alt="Portrait" />
@@ -72,12 +75,30 @@ function Home(props) {
           </Row>
         }
       </Container>
+
       <br />
+      <br />
+      <p id="myBio">I first started programming with an Arduino board in middle school. Ever since then, the elegance and 
+      power of computer science has interested me. Now, I like to practice my coding skills on a wide variety of 
+      projects and showcase my favorite ones on this website. </p>
       <br />
 
+      <hr />
+      <br />
+      <br />
       <Resume />
+      <br />
+
+      <hr />
+      <br />
+      <br />
+      <br />
       <ProjectList projectList={props.projectList}/>
-      {/* TODO add footer? Maybe just a smiley face or something? Maybe thank the reader? */}
+      <br />
+
+      <span id="myFooterSpacer"></span>
+      <hr />
+      <p id="myFooterText">☺ | 2021</p>
 
     </div>
   );
