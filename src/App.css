@@ -1,9 +1,9 @@
 /* TODO remove unnecessary files in the fonts folder (they might get removed on build) */
-@font-face {
+/* @font-face {
   font-family: 'MyWorkSans';
   src: url('./fonts/WorkSans-VariableFont_wght.ttf') format('truetype-variations');
   font-weight: 1 999;
-}
+} */
 @font-face {
   font-family: 'MyLato';
   src: url('./fonts/Lato-Regular.ttf');
@@ -37,6 +37,10 @@
 .bodyFont {
   font-family: 'MyOpenSans';
   /* font-size-adjust: 0.55; */
+}
+
+#mySpinner {
+  margin: 16px;
 }
 
 .myContent {

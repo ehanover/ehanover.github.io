@@ -25,7 +25,7 @@ function App() {
 
   if(projectList === '') {
     return (
-      <div><Spinner animation="border"/></div>
+      <div><Spinner animation="border" id="mySpinner"/></div>
     );
   } else {
     return (
