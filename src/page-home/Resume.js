@@ -22,15 +22,17 @@ function Resume(props) {
     {
       image: CapitaloneLogo,
       date: "August 2020",
-      title: "Capital One Summer Summit",
+      title: "Capital One Summit",
       text: ["Developed machine learning, hardware, and mobile app prototypes in the context of commercial banking",
         "Won first place in event hackathon"],
     },
     {
       image: CapitaloneLogo,
       date: "June - August 2021",
-      title: "Capital One Internship",
-      text: ["Coming Soon"], // TODO update capital one info
+      title: "Capital One Summer Internship",
+      text: ["Designed and developed RESTful API to inform customers of nearby banking services",
+        "Leveraged AWS Lambdas for real-time data processing and DynamoDB for scalable storage",
+        "Deployed API to production AWS environment through internal DevOps pipeline"],
     },
   ];
 
@@ -56,7 +58,7 @@ function Resume(props) {
         <br />
         <h4 className="titleFont">For more information,
           {/* <a target="_blank" rel="noopener noreferrer" href="">my resume</a> or <span></span> */}
-          <span> <s>take a look at my resume</s> or </span>
+          <span> <s>take a look at my full resume</s> or </span>
           <a target="_blank" rel="noopener noreferrer" href="mailto:ephanover@gmail.com">send me an email</a>.
         </h4>
       </div>

@@ -38,7 +38,6 @@ function ProjectList(props) {
         <MyCarousel urls={projectShowcaseImageUrls} captions={projectShowcaseCaptions} links={projectShowcaseCaptionLinks} shuffle={false}/>
       </div>
 
-      {/* <h2 className="titleFont">All Projects</h2> */}
       <Table bordered hover >
         <thead>
           <tr>
@@ -54,10 +53,11 @@ function ProjectList(props) {
             <tr key={p.id} className="ProjectListItem">
               <td>{p.date}</td>
               <td>
-                {favoriteProjectIds.includes(p.id) ?  // This is a favorite project
+                {favoriteProjectIds.includes(p.id) ? 
+                  // This is a favorite project
                   <Link to={`/project/${p.github}`} className="ProjectListTitleFavorite">★ {p.title}</Link>
                 : // Not a favorite project
-                <Link to={`/project/${p.github}`}>{p.title}</Link>
+                  <Link to={`/project/${p.github}`}>{p.title}</Link>
                 }
               </td>
               <td>{p.technologies.join(', ')}</td>
