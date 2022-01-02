@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.2a7617b0.chunk.css",
-    "main.js": "/static/js/main.263158fe.chunk.js",
-    "main.js.map": "/static/js/main.263158fe.chunk.js.map",
+    "main.css": "/static/css/main.fd700b08.chunk.css",
+    "main.js": "/static/js/main.dd3dc4fd.chunk.js",
+    "main.js.map": "/static/js/main.dd3dc4fd.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.aa57e155.js",
     "runtime-main.js.map": "/static/js/runtime-main.aa57e155.js.map",
     "static/css/2.af3c1da9.chunk.css": "/static/css/2.af3c1da9.chunk.css",
-    "static/js/2.a5ccb1a0.chunk.js": "/static/js/2.a5ccb1a0.chunk.js",
-    "static/js/2.a5ccb1a0.chunk.js.map": "/static/js/2.a5ccb1a0.chunk.js.map",
+    "static/js/2.b085adda.chunk.js": "/static/js/2.b085adda.chunk.js",
+    "static/js/2.b085adda.chunk.js.map": "/static/js/2.b085adda.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.c8bfcb7f299271266df30e4a49f222d0.js": "/precache-manifest.c8bfcb7f299271266df30e4a49f222d0.js",
+    "precache-manifest.59b879217111c0e78c16ef84aa1b50c1.js": "/precache-manifest.59b879217111c0e78c16ef84aa1b50c1.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.af3c1da9.chunk.css.map": "/static/css/2.af3c1da9.chunk.css.map",
-    "static/css/main.2a7617b0.chunk.css.map": "/static/css/main.2a7617b0.chunk.css.map",
-    "static/js/2.a5ccb1a0.chunk.js.LICENSE.txt": "/static/js/2.a5ccb1a0.chunk.js.LICENSE.txt",
+    "static/css/main.fd700b08.chunk.css.map": "/static/css/main.fd700b08.chunk.css.map",
+    "static/js/2.b085adda.chunk.js.LICENSE.txt": "/static/js/2.b085adda.chunk.js.LICENSE.txt",
     "static/media/App.css": "/static/media/OpenSans-Regular.3ed9575d.ttf",
-    "static/media/capitalonelogo.png": "/static/media/capitalonelogo.725b62a0.png",
+    "static/media/capitalonelogo.png": "/static/media/capitalonelogo.07783eab.png",
     "static/media/email.png": "/static/media/email.5272fbe5.png",
     "static/media/saiclogo.png": "/static/media/saiclogo.fdae642a.png",
     "static/media/uvalogo.png": "/static/media/uvalogo.289746a3.png"
@@ -23,8 +23,8 @@
   "entrypoints": [
     "static/js/runtime-main.aa57e155.js",
     "static/css/2.af3c1da9.chunk.css",
-    "static/js/2.a5ccb1a0.chunk.js",
-    "static/css/main.2a7617b0.chunk.css",
-    "static/js/main.263158fe.chunk.js"
+    "static/js/2.b085adda.chunk.js",
+    "static/css/main.fd700b08.chunk.css",
+    "static/js/main.dd3dc4fd.chunk.js"
   ]
 }
