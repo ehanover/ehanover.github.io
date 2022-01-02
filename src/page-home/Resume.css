@@ -11,25 +11,28 @@
   /* height: 92px; */
 }
 .ResumeEntry img {
-  border: 2px solid black;
-  border-radius: 8px;
+  /* border: 2px solid white; */
+  /* border-radius: 8px; */
   height: 60px;
   width: 60px;
 }
 .ResumeEntryBody {
   padding-left: 24px;
 }
-.ResumeEntryBodyHeader {
+.ResumeEntryBody ul {
+  padding-left: 36px; /* There's a built-in left padding of 40px by default */
+}
+.ResumeEntryBodyHeaderDiv {
   display: flex;
   margin-bottom: -2px;
 }
-.ResumeEntryBodyHeader h4,
-.ResumeEntryBodyHeader h5 {
+.ResumeEntryBodyHeaderDiv h4,
+.ResumeEntryBodyHeaderDiv h6 {
   align-self: center;
 }
 .ResumeEntryBodyHeaderTitle {
   /* padding: 4px; */
-  padding-right: 16px;
+  padding-right: 20px;
 }
 
 

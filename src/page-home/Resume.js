@@ -1,6 +1,7 @@
 import './Resume.css';
 import React from 'react';
 import CapitaloneLogo from '../images/capitalonelogo.png'
+import MicrosoftLogo from '../images/microsoftlogo.png';
 import UvaLogo from '../images/uvalogo.png';
 import SaicLogo from '../images/saiclogo.png';
 
@@ -11,12 +12,12 @@ function Resume(props) {
       image: UvaLogo,
       date: "2019 - 2023",
       title: "University of Virginia",
-      text: ["BS Computer Science"], //, "Latest GPA: 3.83"], // 3.85?
+      text: ["BS in Computer Science, Minor in Data Science"], // "Latest GPA: 3.XX"
     },
     {
       image: SaicLogo,
       date: "June 2019",
-      title: "SAIC",
+      title: "SAIC Mini-Internship",
       text: ["Created visualizations of satellite/optical imagery data using Python and Excel"],
     },
     {
@@ -34,6 +35,12 @@ function Resume(props) {
         "Leveraged AWS Lambdas for real-time data processing and DynamoDB for scalable storage",
         "Deployed API to production AWS environment through internal DevOps pipeline"],
     },
+    {
+      image: MicrosoftLogo,
+      date: "May - August 2022",
+      title: "Microsoft Summer Internship",
+      text: ["Coming soon"],
+    },
   ];
 
   return (
@@ -45,9 +52,9 @@ function Resume(props) {
           <div key={index} className="ResumeEntry">
             <img src={o.image} alt={o.title}/>
             <div className="ResumeEntryBody">
-              <div className="ResumeEntryBodyHeader">
+              <div className="ResumeEntryBodyHeaderDiv">
                 <h4 className="ResumeEntryBodyHeaderTitle titleFont">{o.title}</h4>
-                <h5>{o.date}</h5>
+                <h6>{o.date}</h6>
               </div>
               <ul>
                 {o.text.map((t, i) => (<li key={i}>{t}</li>))}
