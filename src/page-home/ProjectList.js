@@ -38,7 +38,7 @@ function ProjectList(props) {
         <MyCarousel urls={projectShowcaseImageUrls} captions={projectShowcaseCaptions} links={projectShowcaseCaptionLinks} shuffle={false}/>
       </div>
 
-      <Table bordered hover >
+      <Table hover>
         <thead>
           <tr>
             <th>Date</th>

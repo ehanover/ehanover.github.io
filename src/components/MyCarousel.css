@@ -4,12 +4,12 @@
 }
 
 .MyCarouselNextIcon {
-  width: 25%;
+  width: 20%;
   height: auto;
 }
 
 .MyCarouselPrevIcon {
-  width: 25%;
+  width: 20%;
   height: auto;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);

@@ -2,9 +2,9 @@
 /* #root { */
   /* https://leaverou.github.io/css3patterns/#weave */
   background:
-    linear-gradient(135deg, #005090 21px, #005393 22px, #005393 24px, transparent 24px, transparent 67px, #005393 67px, #005393 69px, transparent 69px),
-    linear-gradient(225deg, #005090 21px, #005393 22px, #005393 24px, transparent 24px, transparent 67px, #005393 67px, #005393 69px, transparent 69px)0 64px;
-  background-color: #005090;
+    linear-gradient(135deg, #fbfbfd 21px, #fcfeff 22px, #fcfeff 24px, transparent 24px, transparent 67px, #fcfeff 67px, #fcfeff 69px, transparent 69px),
+    linear-gradient(225deg, #fbfbfd 21px, #fcfeff 22px, #fcfeff 24px, transparent 24px, transparent 67px, #fcfeff 67px, #fcfeff 69px, transparent 69px)0 64px;
+  background-color: #fbfbfd;
   background-size: 64px 128px;
 
   /* -webkit-background-size: cover !important;

@@ -23,7 +23,7 @@ function Home(props) {
     document.getElementById('ProjectsAnchor').scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' });
   } */
 
-  const shortBio = <h5>I'm a third year computer science student at the University of Virginia. I like making fun projects to learn new skills. Check out some of my favorites on this website!</h5>;
+  const shortBio = <h5>I'm a computer science student at the University of Virginia. I like making fun projects to learn new skills. Check out some of my favorites on this website.</h5>;
   const iconRow = <Row className="iconRow">
     <Col md={2} />
     <Col>
@@ -80,20 +80,17 @@ function Home(props) {
 
       <hr />
       <br />
-      <br />
       <Resume />
       <br />
 
       <hr />
-      <br />
-      <br />
       <br />
       <ProjectList projectList={props.projectList}/>
       <br />
 
       <span id="myFooterSpacer"></span>
       <hr />
-      <p id="myFooterText">☺ | 2021</p>
+      <p id="myFooterText">☺ 2023</p>
 
     </div>
   );

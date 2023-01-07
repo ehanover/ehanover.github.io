@@ -24,22 +24,28 @@ function Resume(props) {
       image: CapitaloneLogo,
       date: "August 2020",
       title: "Capital One Summit",
-      text: ["Developed machine learning, hardware, and mobile app prototypes in the context of commercial banking",
+      text: ["Developed machine learning, hardware, and mobile app prototypes for banking applications",
         "Won first place in event hackathon"],
     },
     {
       image: CapitaloneLogo,
       date: "June - August 2021",
       title: "Capital One Summer Internship",
-      text: ["Designed and developed RESTful API to inform customers of nearby banking services",
-        "Leveraged AWS Lambdas for real-time data processing and DynamoDB for scalable storage",
-        "Deployed API to production AWS environment through internal DevOps pipeline"],
+      text: ["Developed RESTful API to show customers nearby banking services",
+        "Utilized AWS Lambdas for real-time updates, AWS DynamoDB for scalable storage, and a DevOps pipeline for deployment"]
     },
     {
       image: MicrosoftLogo,
       date: "May - August 2022",
       title: "Microsoft Summer Internship",
-      text: ["Coming soon"],
+      text: ["Migrated internal microservice-based application to use Docker and Kubernetes",
+        "Deployed application to production environment using Azure DevOps pipeline"],
+    },
+    {
+      image: MicrosoftLogo,
+      date: "August 2023",
+      title: "Microsoft Software Engineer",
+      text: [],
     },
   ];
 
@@ -63,11 +69,11 @@ function Resume(props) {
           </div>
         ))}
         <br />
-        <h4 className="titleFont">For more information,
-          {/* <a target="_blank" rel="noopener noreferrer" href="">my resume</a> or <span></span> */}
+        {/* <h4 className="titleFont">For more information,
           <span> <s>take a look at my full resume</s> or </span>
           <a target="_blank" rel="noopener noreferrer" href="mailto:ephanover@gmail.com">send me an email</a>.
-        </h4>
+        </h4> */}
+        {/* <a target="_blank" rel="noopener noreferrer" href="">my resume</a> or <span></span> */}
       </div>
     </div>
   );
