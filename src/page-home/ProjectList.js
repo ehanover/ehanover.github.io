@@ -1,8 +1,8 @@
 import './ProjectList.css';
 import { Link } from 'react-router-dom';
 import React from 'react';
-import MyCarousel from '../components/MyCarousel';
 import Table from 'react-bootstrap/Table';
+import MyCarousel from '../components/MyCarousel';
 
 function ProjectList(props) {
   function projectListSort(a, b) {
@@ -16,15 +16,15 @@ function ProjectList(props) {
     }
     return 0;
   }
-  
+
   const favoriteProjectIds = props.projectList.favoriteIds;
   const allProjects = props.projectList.projects.sort(projectListSort);
 
-  let projectShowcaseImageUrls = [];
-  let projectShowcaseCaptions = [];
-  let projectShowcaseCaptionLinks = [];
-  props.projectList.projects.forEach(project => {
-    project.imageShowcaseNums.forEach(num => {
+  const projectShowcaseImageUrls = [];
+  const projectShowcaseCaptions = [];
+  const projectShowcaseCaptionLinks = [];
+  props.projectList.projects.forEach((project) => {
+    project.imageShowcaseNums.forEach((num) => {
       projectShowcaseImageUrls.push(`https://raw.githubusercontent.com/ehanover/ehanover.github.io-content/master/${project.github}/img${num}.jpg`);
       projectShowcaseCaptions.push(project.title);
       projectShowcaseCaptionLinks.push(`/project/${project.github}`);
@@ -35,7 +35,7 @@ function ProjectList(props) {
     <div className="ProjectList">
       <h1 id="ProjectsAnchor" className="titleFont">My Projects</h1>
       <div className="ProjectListCarousel">
-        <MyCarousel urls={projectShowcaseImageUrls} captions={projectShowcaseCaptions} links={projectShowcaseCaptionLinks} shuffle={false}/>
+        <MyCarousel urls={projectShowcaseImageUrls} captions={projectShowcaseCaptions} links={projectShowcaseCaptionLinks} shuffle={false} />
       </div>
 
       <Table hover>
@@ -53,12 +53,11 @@ function ProjectList(props) {
             <tr key={p.id} className="ProjectListItem">
               <td>{p.date}</td>
               <td>
-                {favoriteProjectIds.includes(p.id) ? 
+                {favoriteProjectIds.includes(p.id)
                   // This is a favorite project
-                  <Link to={`/project/${p.github}`} className="ProjectListTitleFavorite">★ {p.title}</Link>
-                : // Not a favorite project
-                  <Link to={`/project/${p.github}`}>{p.title}</Link>
-                }
+                  ? <Link to={`/project/${p.github}`} className="ProjectListTitleFavorite">★ {p.title}</Link>
+                  // Not a favorite project
+                  : <Link to={`/project/${p.github}`}>{p.title}</Link>}
               </td>
               <td>{p.technologies.join(', ')}</td>
             </tr>
